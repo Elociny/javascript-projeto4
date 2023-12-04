@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="caixa-maior">
+        <input class="input-cidade" placeholder="Digite o nome da cidade">
+        <button class="botao-buscar" onclick="cliqueiNoBotao()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <div class="caixa-media hidden" id="infos">
+            <h2 class="cidade"></h2>
+            <p class="temp"></p>
+
+            <div class="caixa-menor">
+                <img class="previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone de núvem">
+                <p class="texto-previsao"></p>
+            </div>
+
+            <p class="umidade"></p>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>
